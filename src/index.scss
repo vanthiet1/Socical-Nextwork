@@ -1,0 +1,14 @@
+
+$font__text: 'Poppins', sans-serif;
+$font__size:1rem;
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Krub:wght@600&family=Open+Sans:wght@300&family=Poppins&family=Roboto:ital,wght@1,300&family=Yanone+Kaffeesatz:wght@200&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: $font__text;
+  font-size:  $font__size;
+}
