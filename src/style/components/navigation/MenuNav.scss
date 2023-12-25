@@ -1,0 +1,49 @@
+@import '../../variables/color/Navigation/color.scss';
+@import '../../assets/font.scss';
+.center__navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:max-content;
+    gap: 5px;
+    .page__icon{
+         width: 100%;
+         color: $color-icon;
+         width: 110px;
+         text-align: center;
+         padding: 12px 0px 10px 0px;
+         position: relative;
+        
+         &:not(.active__page):hover{
+            background-color: #444444;
+            border-radius: 10px;
+         }
+        &:hover .hover__page__home{
+           display: block;
+           transition: ease-out 0.5s;
+           color: black;
+        }
+         .hover__page__home{
+            position: absolute;
+            bottom: -45px;
+            left: 0px;
+            background-color: rgb(215, 215, 215);
+            padding: 10px;
+            border-radius: 7px;
+            color: black;
+            font-size: 0.8rem;
+            font-family: $font-menu-nav;
+            width: 100%;
+            display: none;
+         }
+        }
+        .active__page{
+           border-bottom:3.5px solid #0866ff;
+           border-radius: 1px;
+           svg{
+            color: #0866ff;
+            border: none;
+           }
+        }
+       
+}

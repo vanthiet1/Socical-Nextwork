@@ -1,0 +1,12 @@
+@import '../variables/color/Navigation/color.scss';
+.container__navigation{
+    background-color: $background-navigation;
+    width: 100%;
+    height: auto;
+    padding: 2.5px 5px 2.5px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid rgb(64, 64, 64) ;
+  
+}

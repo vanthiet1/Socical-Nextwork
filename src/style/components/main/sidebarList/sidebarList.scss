@@ -1,0 +1,99 @@
+@import '../../../../style/assets/font.scss';
+.container__sidebarList {
+    padding: 10px;
+    width: 100%;
+    height: max-content;
+  .categories__item__list {
+    height: 89.1vh;
+    overflow: hidden;
+    transition: ease 0.5s;
+
+    &:hover{
+      overflow: auto;
+    }
+    &::-webkit-scrollbar{
+      width: 7.5px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #5c5c5c;
+      border-radius: 6px;
+      
+    }
+    &::-webkit-scrollbar-track {
+      background-color: #18191a;
+    }
+    .item__categories {
+      display: flex;
+      align-items: center;
+      padding: 5px 0px 5px 10px;
+      gap: 10px;
+      &:hover{
+       transition: ease 0.25s;
+       background-color: rgb(65, 65, 65);
+       border-radius: 8px;
+       cursor: pointer;
+      }
+      img {
+        border-radius: 50%;
+        width: 37px;
+      }
+      span{
+        color: #fff;
+        font-size: 0.9rem;
+        font-weight: 600;
+        font-family:$font-list-menu;
+        max-width: 300px;
+      }
+        svg{
+          color: #fff;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          background-color: #303031;
+          padding: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    
+    }
+    .line{
+      width: 100%;
+      border: solid rgb(68, 68, 68) 0.5px;
+      margin-top: 5px;
+    }
+    .title__group{
+       display: flex;
+       justify-content: space-between;
+       padding: 10px;
+       &:hover span:nth-child(2){
+        opacity: 1;
+        transition: ease 0.1s;
+        cursor: pointer;
+      }
+      span:nth-child(1){
+        color: #fff;
+        font-family: $font-list-menu;
+        font-weight: 600;
+      }
+      span:nth-child(2){
+        color: #5AA7FF;
+        font-family: $font-list-menu;
+        opacity: 0;
+      }
+     
+    }
+    .copyright{
+      padding: 15px;
+      span{
+      text-align: left; 
+        max-width: 230px;
+        display: inline-block;
+        color: rgb(173, 173, 173);
+        font-family: $font-list-menu;
+        font-size: 0.8rem;
+      }
+    }
+  }
+ 
+}

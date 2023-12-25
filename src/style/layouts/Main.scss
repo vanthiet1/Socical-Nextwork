@@ -1,0 +1,12 @@
+@import '../../index.scss';
+.content__slidebar__main{
+    display: flex;
+     background-color: $background-color-main;
+     justify-content: space-between;
+    width: 100%;
+    height: auto;
+    .silde__bar__list{
+        width: 25%;
+         height: auto;
+    }
+}
