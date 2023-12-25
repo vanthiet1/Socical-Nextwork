@@ -1,4 +1,4 @@
-import { iconCreate, iconStories, iconMovies, iconEvent,iconFanpage,iconCommercial,iconGroup,iconEvents,iconMarketplace} from "../../../style/assets/icon/iconMenu";
+import { iconCreate, iconStories, iconMovies, iconEvent,iconFanpage,iconCommercial,iconGroup,iconEvents,iconMarketplace} from "../../../style/assets/icon/IconMenu";
 const Menu = () => {
     return (
         <>
