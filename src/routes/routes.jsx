@@ -1,7 +1,7 @@
 import paths from "../config/path";
 // 
 import Home from '../pages/Home';
-import Watch from "../pages/watch/watch";
+import Watch from "../pages/watch/Watch";
 import Marketplace from "../pages/marketplace/Marketplace";
 import Groups from "../pages/groups/Groups";
 import Gaming from "../pages/gaming/Gaming";
