@@ -1,5 +1,6 @@
 import '../../style/components/main/mainpage/stories.scss';
-import { userStories } from './dataUser.';
+import {userStories} from './dataUser.';
+// import { userStories } from './dataUser.';
 const Stories = () => {
     
     return (
