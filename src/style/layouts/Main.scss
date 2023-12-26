@@ -1,12 +1,19 @@
-@import '../../index.scss';
-.content__slidebar__main{
-    display: flex;
-     background-color: $background-color-main;
-     justify-content: space-between;
-    width: 100%;
+@import "../../index.scss";
+.content__slidebar__main {
+  display: flex;
+  background-color: $background-color-main;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  .side__bar__list {
+    width: 30%;
     height: auto;
-    .silde__bar__list{
-        width: 25%;
-         height: auto;
-    }
+  }
+  .main {
+    width: 37%;
+    height: auto;
+  }
+  .side__bar__contact {
+    width: 20%;
+  }
 }

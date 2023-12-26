@@ -5,15 +5,13 @@
     height: max-content;
   .categories__item__list {
     height: 89.1vh;
-    overflow: hidden;
-    transition: ease 0.5s;
-
-    &:hover{
       overflow: auto;
-    }
+    transition: ease 0.5s;
+    
     &::-webkit-scrollbar{
-      width: 7.5px;
+      width: 7px;
     }
+  
     &::-webkit-scrollbar-thumb {
       background-color: #5c5c5c;
       border-radius: 6px;

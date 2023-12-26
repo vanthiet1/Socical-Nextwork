@@ -1,3 +1,11 @@
 
 @import './style/vendors/reset.scss';
+@import './style/assets/font.scss';
+// background
 $background-color-main:#18191a;
+// font
+html{
+    font-family: $font-list-menu;
+    font-size: 1rem;
+}
+

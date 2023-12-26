@@ -11,7 +11,7 @@ const Home = () => {
             <div className="container">
                 <Navigation></Navigation>
                 <div className="content__slidebar__main">
-                    <div className="silde__bar__list">
+                    <div className="side__bar__list">
                         <SidebarList></SidebarList>
                     </div>
                     <div className="main">
