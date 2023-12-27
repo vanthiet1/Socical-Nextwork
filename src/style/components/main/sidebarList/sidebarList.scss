@@ -20,11 +20,15 @@
     &::-webkit-scrollbar-track {
       background-color: #18191a;
     }
+    .rotate-arrow-down {
+      transform: rotate(180deg); 
+    }
     .item__categories {
       display: flex;
       align-items: center;
       padding: 5px 0px 5px 10px;
       gap: 10px;
+  
       &:hover{
        transition: ease 0.25s;
        background-color: rgb(65, 65, 65);

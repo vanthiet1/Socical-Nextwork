@@ -1,0 +1,55 @@
+@import "../../../variables/color/index.scss";
+.container__post{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: $background-main;
+    margin-top: 15px;
+    border-radius: 8px;
+    .post__now{
+        display: flex;
+        justify-content: space-between;
+        border-bottom:0.5px solid rgb(66, 66, 66);
+        padding-bottom: 15px;
+        img{
+            border-radius: 50%;
+            width:40px;
+        }
+        input{
+             border-radius: 30px;
+             padding: 5px 0px 0px 10px;
+             width:91%;
+             background-color: #3c3c3c;
+             border: none;
+             outline: none;
+             &::placeholder{
+                color: rgb(160, 160, 160);
+                font-size: 1rem;
+             }
+        }
+    }
+    .list__styles__post{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        .style__post{
+            display: flex;
+            align-items: center;
+            padding:5px 5px 5px 5px;
+            &:hover{
+                background-color:#383838 ;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: ease .2s;
+            }
+            span{
+                color: #adadad;
+                font-size: 0.9;
+                font-weight: 600;
+                padding: 10px;
+                display: inline-block;
+            }
+        }
+    }
+}

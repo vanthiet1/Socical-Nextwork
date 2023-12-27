@@ -1,52 +1,53 @@
+import avatarProfile from '../../public/image/imgProfile.png';
 const userStories = [
       {
         id:1,
-        avatarUser:'https://scontent.fsgn2-7.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?_nc_cat=1&ccb=1-7&_nc_sid=2b6aad&_nc_eui2=AeFZwaKO8hfdW1HS99F-bEK5so2H55p0AlGyjYfnmnQCUewBgvTyrIHMWRr1n1W9_mU7i1eZhLBjwSMUY9L4IWy8&_nc_ohc=WBNISUE6G2AAX-jBV9b&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfAHn5a1mSUlSvPpClHbqM6L5wOFbZ2gg76bK91Xc5N_8g&oe=65B1CDB8',
+        avatarUser:`${avatarProfile}`,
         name:"User1"
       },
       {
         id:2,
-        avatarUser:'https://scontent.fsgn2-7.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?_nc_cat=1&ccb=1-7&_nc_sid=2b6aad&_nc_eui2=AeFZwaKO8hfdW1HS99F-bEK5so2H55p0AlGyjYfnmnQCUewBgvTyrIHMWRr1n1W9_mU7i1eZhLBjwSMUY9L4IWy8&_nc_ohc=WBNISUE6G2AAX-jBV9b&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfAHn5a1mSUlSvPpClHbqM6L5wOFbZ2gg76bK91Xc5N_8g&oe=65B1CDB8',
+        avatarUser:`${avatarProfile}`,
         name:"User2"
       },
       {
         id:3,
-        avatarUser:'https://scontent.fsgn2-7.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?_nc_cat=1&ccb=1-7&_nc_sid=2b6aad&_nc_eui2=AeFZwaKO8hfdW1HS99F-bEK5so2H55p0AlGyjYfnmnQCUewBgvTyrIHMWRr1n1W9_mU7i1eZhLBjwSMUY9L4IWy8&_nc_ohc=WBNISUE6G2AAX-jBV9b&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfAHn5a1mSUlSvPpClHbqM6L5wOFbZ2gg76bK91Xc5N_8g&oe=65B1CDB8',
+        avatarUser:`${avatarProfile}`,
         name:"User3"
       },
       {
         id:4,
-        avatarUser:'https://scontent.fsgn2-7.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?_nc_cat=1&ccb=1-7&_nc_sid=2b6aad&_nc_eui2=AeFZwaKO8hfdW1HS99F-bEK5so2H55p0AlGyjYfnmnQCUewBgvTyrIHMWRr1n1W9_mU7i1eZhLBjwSMUY9L4IWy8&_nc_ohc=WBNISUE6G2AAX-jBV9b&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfAHn5a1mSUlSvPpClHbqM6L5wOFbZ2gg76bK91Xc5N_8g&oe=65B1CDB8',
+        avatarUser:`${avatarProfile}`,
         name:"User4"
       },
       {
         id:5,
-        avatarUser:'https://scontent.fsgn2-7.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?_nc_cat=1&ccb=1-7&_nc_sid=2b6aad&_nc_eui2=AeFZwaKO8hfdW1HS99F-bEK5so2H55p0AlGyjYfnmnQCUewBgvTyrIHMWRr1n1W9_mU7i1eZhLBjwSMUY9L4IWy8&_nc_ohc=WBNISUE6G2AAX-jBV9b&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfAHn5a1mSUlSvPpClHbqM6L5wOFbZ2gg76bK91Xc5N_8g&oe=65B1CDB8',
+        avatarUser:`${avatarProfile}`,
         name:"User5"
       },
       {
         id:6,
-        avatarUser:'https://scontent.fsgn2-7.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?_nc_cat=1&ccb=1-7&_nc_sid=2b6aad&_nc_eui2=AeFZwaKO8hfdW1HS99F-bEK5so2H55p0AlGyjYfnmnQCUewBgvTyrIHMWRr1n1W9_mU7i1eZhLBjwSMUY9L4IWy8&_nc_ohc=WBNISUE6G2AAX-jBV9b&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfAHn5a1mSUlSvPpClHbqM6L5wOFbZ2gg76bK91Xc5N_8g&oe=65B1CDB8',
+        avatarUser:`${avatarProfile}`,
         name:"User6"
       },
       {
         id:7,
-        avatarUser:'https://scontent.fsgn2-7.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?_nc_cat=1&ccb=1-7&_nc_sid=2b6aad&_nc_eui2=AeFZwaKO8hfdW1HS99F-bEK5so2H55p0AlGyjYfnmnQCUewBgvTyrIHMWRr1n1W9_mU7i1eZhLBjwSMUY9L4IWy8&_nc_ohc=WBNISUE6G2AAX-jBV9b&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfAHn5a1mSUlSvPpClHbqM6L5wOFbZ2gg76bK91Xc5N_8g&oe=65B1CDB8',
+        avatarUser:`${avatarProfile}`,
         name:"User7"
       },
       {
         id:8,
-        avatarUser:'https://scontent.fsgn2-7.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?_nc_cat=1&ccb=1-7&_nc_sid=2b6aad&_nc_eui2=AeFZwaKO8hfdW1HS99F-bEK5so2H55p0AlGyjYfnmnQCUewBgvTyrIHMWRr1n1W9_mU7i1eZhLBjwSMUY9L4IWy8&_nc_ohc=WBNISUE6G2AAX-jBV9b&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfAHn5a1mSUlSvPpClHbqM6L5wOFbZ2gg76bK91Xc5N_8g&oe=65B1CDB8',
+        avatarUser:`${avatarProfile}`,
         name:"User8"
       },
       {
         id:9,
-        avatarUser:'https://scontent.fsgn2-7.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?_nc_cat=1&ccb=1-7&_nc_sid=2b6aad&_nc_eui2=AeFZwaKO8hfdW1HS99F-bEK5so2H55p0AlGyjYfnmnQCUewBgvTyrIHMWRr1n1W9_mU7i1eZhLBjwSMUY9L4IWy8&_nc_ohc=WBNISUE6G2AAX-jBV9b&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfAHn5a1mSUlSvPpClHbqM6L5wOFbZ2gg76bK91Xc5N_8g&oe=65B1CDB8',
+        avatarUser:`${avatarProfile}`,
         name:"User9"
       },
       {
         id:10,
-        avatarUser:'https://scontent.fsgn2-7.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?_nc_cat=1&ccb=1-7&_nc_sid=2b6aad&_nc_eui2=AeFZwaKO8hfdW1HS99F-bEK5so2H55p0AlGyjYfnmnQCUewBgvTyrIHMWRr1n1W9_mU7i1eZhLBjwSMUY9L4IWy8&_nc_ohc=WBNISUE6G2AAX-jBV9b&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfAHn5a1mSUlSvPpClHbqM6L5wOFbZ2gg76bK91Xc5N_8g&oe=65B1CDB8',
+        avatarUser:`${avatarProfile}`,
         name:"User10"
       }
 ]
