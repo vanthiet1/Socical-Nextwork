@@ -1,5 +1,5 @@
 import avatars from '../../../public/image/avatar.png';
-import video from '../../../public/video/project.mp4';
+import video from '../../../public/video/4166969340659133351.mp4';
 const allUserPost = [
 {
     id:1,

@@ -50,7 +50,6 @@ const UserPosts = () => {
                             {isVideoURL(inforUser.content) ? (
                                 <video controls width="100%">
                                     <source src={inforUser.content} type="video/mp4" />
-                                    Your browser does not support the video tag.
                                 </video>
                             ) : (
                                 isImageOrURL(inforUser.content) ? (
