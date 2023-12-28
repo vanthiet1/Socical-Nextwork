@@ -1,21 +1,28 @@
 import "../../style/components/main/mainpage/userPosts.scss";
 import { iconLike, closePost, iconComment, iconShare } from './dataIcon/icon';
-import allUserPost from './dataUser/user';
-const isImageOrURL = (str) => {
-    const imageFormats = /\.(jpeg|jpg|gif|png)$/;
-    return imageFormats.test(str) || isURL(str);
-};
+import allUserPost from './dataUserPost/userPost';
+// import ReactPlayer from 'react-player';
 
-// Hàm kiểm tra xem đối tượng có phải là URL không
-const isURL = (str) => {
-    try {
-        new URL(str);
-        return true;
-    } catch (error) {
-        return false;
-    }
-};
 const UserPosts = () => {
+    const isImageOrURL = (str) => {
+        const imageFormats = /\.(jpeg|jpg|gif|png)$/;
+        const videoFormats = /\.(mp4|webm|ogg)$/;
+        return imageFormats.test(str) || videoFormats.test(str) || isURL(str);
+    };
+
+    const isVideoURL = (str) => {
+        const videoFormats = /\.(mp4|webm|ogg)$/;
+        return videoFormats.test(str);
+    };
+    // Hàm kiểm tra xem đối tượng có phải là URL không
+    const isURL = (str) => {
+        try {
+            new URL(str);
+            return true;
+        } catch (error) {
+            return false;
+        }
+    };
     return (
         <>
             <div className="container__user_posts">
@@ -40,10 +47,17 @@ const UserPosts = () => {
                             <p>{inforUser.captions}</p>
                         </div>
                         <div className="content__posts">
-                            {isImageOrURL(inforUser.content) ? (
-                                <img src={inforUser.content} alt="Ảnh" />
+                            {isVideoURL(inforUser.content) ? (
+                                <video controls width="100%">
+                                    <source src={inforUser.content} type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
                             ) : (
-                                <p>{inforUser.content}</p>
+                                isImageOrURL(inforUser.content) ? (
+                                    <img src={inforUser.content} alt="Ảnh" />
+                                ) : (
+                                    <p>{inforUser.content}</p>
+                                )
                             )}
                         </div>
 

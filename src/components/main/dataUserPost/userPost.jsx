@@ -1,4 +1,5 @@
-import avatars from '../../../public/image/avatar.png'
+import avatars from '../../../public/image/avatar.png';
+import video from '../../../public/video/project.mp4';
 const allUserPost = [
 {
     id:1,
@@ -15,6 +16,22 @@ const allUserPost = [
     timePost:'5 phút',
     captions:'Xin chào mọi người',
     content:' Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime perferendis repellendus sunt magni architecto similique non earum pariatur dolor, sequi veniam voluptatem iusto repudiandae dignissimos placeat optio ipsum tempore enim?'
+},
+{
+    id:3,
+    avatar:avatars,
+    name:'User 3',
+    timePost:'20 phút',
+    captions:'Chia sẽ kinh nghiệm lập trình frontend',
+    content:'https://scontent-hkg1-2.xx.fbcdn.net/v/t39.30808-6/414895758_779449597542755_5476652339089105289_n.jpg?stp=cp6_dst-jpg_p843x403&_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeGqawc0jVTH1EwZN5-OlWc5UVPp--5GN9tRU-n77kY326RLy_q-HPnZpyu6nHFXYA7s8AZ3oqZIwhRso2QxSIgO&_nc_ohc=Mt85rrLfNrQAX_DCyo9&_nc_ht=scontent-hkg1-2.xx&oh=00_AfDU9Z1l_tbvGf24GTSOAogvNTfugKWW18uakW9AIuRuCw&oe=6591E931'
+},
+{
+    id:4,
+    avatar:avatars,
+    name:'User 4',
+    timePost:'1 phút',
+    captions:'Dự án cá nhân',
+    content:video
 }
 ]
 export default allUserPost;
