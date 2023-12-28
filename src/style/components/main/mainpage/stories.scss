@@ -8,7 +8,7 @@
   padding: 10px 15px 20px 15px;
   position: relative;
   transition: margin-left 0.3s ease;
-  .slide__profile__right{
+  .slide__profile__right {
     position: absolute;
     z-index: 2;
     right: 25px;
@@ -20,27 +20,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    svg{
-        color: #fff;
+    cursor: pointer;
+    svg {
+      color: #fff;
     }
-}
-.slide__profile__left{
-  position: absolute;
-  z-index: 2;
-  left: 25px;
-  top: 50%;
-  background-color: #484848;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  svg{
+  }
+  .slide__profile__left {
+    position: absolute;
+    z-index: 2;
+    left: 25px;
+    top: 50%;
+    background-color: #484848;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    svg {
       color: #fff;
       rotate: 180deg;
+    }
   }
-}
   .categories__stories__reels {
     display: flex;
     justify-content: space-between;
@@ -71,11 +74,10 @@
     height: auto;
     position: relative;
     overflow-x: auto;
-    &::-webkit-scrollbar{
+    &::-webkit-scrollbar {
       display: none;
     }
-   
-   
+
     .content__stories {
       display: flex;
       gap: 10px;
@@ -128,13 +130,14 @@
       }
       .users__stoties {
         .create_stories_personal {
-          position: relative;
-          img{
-             width: 110px;
-             height:200px;
-             border-bottom-left-radius: 10px;
-             border-bottom-right-radius: 10px;
+          cursor: pointer;
 
+          position: relative;
+          img {
+            width: 110px;
+            height: 200px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
           }
           .avatar__user {
             position: absolute;
@@ -149,23 +152,21 @@
               border-radius: 50%;
               border: 4px solid #0866ff;
             }
-          
           }
-          .name{
+          .name {
             position: absolute;
             bottom: 20px;
             left: 30%;
-            span{
-                max-width: 50px;
-                font-size: 0.9rem;
-                font-weight: 600;
+            span {
+              max-width: 50px;
+              font-size: 0.9rem;
+              font-weight: 600;
             }
-
-        }
+          }
         }
       }
     }
-    .profile-open{
+    .profile-open {
       transform: translateX(-200px);
       transition: 0.5s ease;
     }

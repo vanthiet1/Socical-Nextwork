@@ -1,0 +1,112 @@
+@import "../../../variables/color/index.scss";
+.container__user_posts {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+
+ .all__content{
+  background-color: $background-main;
+margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 15px;
+
+ }
+  .content__information {
+    display: flex;
+    justify-content: space-between;
+    .information__user {
+      display: flex;
+      gap: 10px;
+      .avatar {
+        img {
+          border-radius: 50%;
+          width: 40px;
+        }
+      }
+      .name__time__post {
+        span {
+          display: block;
+        }
+        span:nth-child(1) {
+          color: #fff;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        span:nth-child(2) {
+          color: #959595;
+          font-size: 0.8rem;
+        }
+      }
+    }
+    .options__user {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      svg {
+        color: #fff;
+      }
+      .close__post{
+        color: #fff;
+      }
+    }
+  }
+  .caption_post {
+    p {
+      color: #fff;
+      font-size: 0.9rem;
+    }
+  }
+  .content__posts {
+    padding-top: 6px;
+    img {
+      width: 100%;
+    }
+    p{
+      color: #fff;
+    }
+  }
+  .likes__comments {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px 20px 0px;
+    border-bottom: 1px solid rgb(60, 60, 60);
+    span {
+      color: #b0b0b0;
+    }
+    .comment__share {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      span {
+        color: #b0b0b0;
+        font-size: 0.9rem;
+      }
+    }
+  }
+  .service_state{
+    display:flex;
+    justify-content: space-between;
+    padding-top: 10px;
+     .state{
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      width: 33%;
+       padding: 5px 10px 5px 10px;
+       justify-content: center;
+       border-radius: 5px;
+
+      &:hover{
+        background-color: rgb(68, 68, 68);
+        transition: ease .25s;
+        cursor: pointer;
+      }
+        span{
+          display: inline-block;
+            color: #b0b0b0;
+            font-weight: 600;
+        }
+      
+     }
+  }
+}

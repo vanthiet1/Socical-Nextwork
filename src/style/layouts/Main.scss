@@ -11,7 +11,11 @@
   }
   .main {
     width: 37%;
-    height: auto;
+    height: 91vh;
+    overflow-y: auto;
+    &::-webkit-scrollbar{
+      display: none;
+    }
   }
   .side__bar__contact {
     width: 20%;
