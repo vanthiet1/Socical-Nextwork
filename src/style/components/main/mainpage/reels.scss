@@ -1,0 +1,48 @@
+.personal__reels{
+    background-image: linear-gradient(45deg, #d6cb34 12%, #ec42a8 56%);
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    .create_reels_personal{
+        width: 110px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .video__reels{
+            background-color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           position: relative;
+           .icon__create{
+            position: absolute;
+            background-color: #fff;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            bottom: 0;
+            right: 0;
+            border: 1px solid #ec42a8;
+           }
+        }
+        .create__movie{
+            position: absolute;
+            width: max-content;
+            bottom: 5px;
+            span{
+                font-size: 0.8rem;
+                color: #fff;
+                font-weight: 600;
+            }
+        }
+    }
+}

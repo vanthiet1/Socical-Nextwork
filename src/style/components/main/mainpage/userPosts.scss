@@ -60,6 +60,7 @@ margin-bottom: 20px;
     padding-top: 6px;
     img {
       width: 100%;
+      object-fit: cover;
     }
     p{
       color: #fff;
@@ -70,6 +71,8 @@ margin-bottom: 20px;
     justify-content: space-between;
     padding: 10px 0px 20px 0px;
     border-bottom: 1px solid rgb(60, 60, 60);
+    cursor: pointer;
+
     span {
       color: #b0b0b0;
     }
@@ -77,6 +80,8 @@ margin-bottom: 20px;
       display: flex;
       gap: 10px;
       align-items: center;
+      cursor: pointer;
+
       span {
         color: #b0b0b0;
         font-size: 0.9rem;
@@ -95,7 +100,6 @@ margin-bottom: 20px;
        padding: 5px 10px 5px 10px;
        justify-content: center;
        border-radius: 5px;
-
       &:hover{
         background-color: rgb(68, 68, 68);
         transition: ease .25s;

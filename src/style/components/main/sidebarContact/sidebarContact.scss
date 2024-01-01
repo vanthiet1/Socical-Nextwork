@@ -1,0 +1,289 @@
+// .blurred {
+//     filter: blur(5px); 
+//   }
+//  .notBlurrd{
+//   filter: blur(0px); 
+//  }
+.container__sidebar__contact {
+  padding: 10px;
+  .content__sponsor {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid rgb(76, 76, 76);
+    padding-bottom: 20px;
+    .title__sponsor {
+      padding-block: 10px;
+      span {
+        color: #d0d0d0;
+      }
+    }
+    .content {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 5px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      position: relative;
+      .options__content__sponsor {
+        position: absolute;
+        z-index: 10;
+        top: 5px;
+        right: 10px;
+        .icon__options {
+          background-color: rgb(62, 62, 62);
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          visibility: hidden;
+          position: relative;
+          &:hover {
+            background-color: rgb(84, 84, 84);
+          }
+          svg {
+            color: white;
+          }
+        }
+      }
+      .content__options {
+        position: absolute;
+        background-color: #232323;
+        left: -20px;
+        top: 35px;
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        .more__options {
+          &:hover {
+            background-color: rgb(58, 58, 58);
+            border-radius: 5px;
+            cursor: pointer;
+          }
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding-block: 5px;
+
+          span:nth-child(1) {
+            color: white;
+            display: block;
+            font-size: 1rem;
+          }
+          span:nth-child(2) {
+            color: white;
+            display: block;
+            font-size: 0.8rem;
+            color: rgb(160, 160, 160);
+          }
+        }
+      }
+      &:hover {
+        background-color: rgb(49, 49, 49);
+      }
+      &:hover .icon__options {
+        visibility: visible;
+      }
+
+      .img__content {
+        img {
+          width: 130px;
+          border-radius: 10px;
+        }
+      }
+      .title__content {
+        span {
+          display: block;
+          color: #fff;
+          font-size: 0.9rem;
+        }
+        span:nth-child(2) {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+  .birthday__user {
+    padding-block: 10px;
+    span:nth-child(1) {
+      font-size: 1.2rem;
+      color: #fff;
+    }
+    .birthday__today {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 5px 10px 5px;
+      cursor: pointer;
+      border-radius: 5px;
+      &:hover {
+        background-color: #232323;
+      }
+      span {
+        color: #fff;
+        font-size: 0.9rem;
+      }
+    }
+  }
+  .content__birthday__friend {
+    width: 3000%;
+    position: absolute;
+    background-color: #303031;
+    height: auto;
+    left: 2700%;
+    border-radius: 10px;
+    top: 100px;
+    z-index: 10;
+
+    .birthday__friend {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border-bottom: 1px solid #4f4f4f;
+      .close{
+        background-color: #fff;
+        border-radius: 50%;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+   
+    
+   
+      h1 {
+        font-size: 1.3rem;
+        width: 90%;
+        text-align: center;
+        color: #fff;
+      }
+    }
+    .birthday__of__user {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      .name_ib {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        img {
+          width: 60px;
+          border-radius: 35px;
+        }
+        .groups__user {
+          span:nth-child(1) {
+            color: #fff;
+            padding-block: 5px;
+            display: inline-block;
+          }
+          .inbox__mess {
+            &:hover {
+              background-color: rgb(73, 73, 73);
+            }
+            cursor: pointer;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background-color: #3a3b3c;
+            padding: 7px;
+            border-radius: 5px;
+            span {
+              color: #fff;
+            }
+            i {
+              background-color: rgb(124, 124, 124);
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+      .age__user {
+        span {
+          color: #fff;
+        }
+      }
+    }
+    .see_more_birthday {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+      button{
+        width: 100%;
+        border-radius: 8px;
+        padding: 10px;
+        background-color: #3a3b3c;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        font-weight: 600;
+        &:hover{
+            background-color: rgb(73, 73, 73);
+
+        }
+      }
+    }
+  }
+  position: relative;
+  .users__contact{
+    width: 100%;
+    height: auto;
+    .func__users__contact{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .title{
+        span{
+          color: #bbbbbb;
+          font-weight: 600;
+        }
+      }
+      .icon__search__option{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+          .option , .search{
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover{
+              background-color: rgb(52, 52, 52);
+              border-radius: 50%;
+            }
+            svg{
+              color: #fff;
+              cursor: pointer;
+            }
+        }
+      }
+    }
+    .all__user{
+      .information_users{
+      margin-block: 2px;
+      padding-block: 5px;
+      border-radius: 8px;
+      cursor: pointer;
+      &:hover{
+        background-color: rgb(52, 52, 52);
+        
+      }
+         img{
+          width: 40px;
+          border-radius: 50%;
+         }
+         span{
+          color: #fff;
+          font-weight: 600;
+         }
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+    }
+  }
+}

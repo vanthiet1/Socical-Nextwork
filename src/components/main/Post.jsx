@@ -1,5 +1,6 @@
 import "../../style/components/main/mainpage/post.scss";
 import avatar from '../../public/image/avatar.png';
+import '../../style/components/main/sidebarContact/sidebarContact.scss';
 const Post = () => {
     return (
         <>
@@ -22,7 +23,10 @@ const Post = () => {
                         <span>Cảm xúc/hoạt động</span>
                     </div>
                 </div>
+                
             </div>
+         
+        
         </>
     );
 };

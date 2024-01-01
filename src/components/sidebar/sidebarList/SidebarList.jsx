@@ -73,7 +73,7 @@ const SidebarList = () => {
                     ))}
                     <div className="copyright">
                      <span>
-                     Quyền riêng tư - Điều khoản - lựa chọn quảng cáo - Cookie - Xem thêm - Meta 2023
+                     Quyền riêng tư - Điều khoản - lựa chọn quảng cáo - Cookie - Xem thêm - Văn Thiết Frontend Dev
                      </span>
                     </div>
                 </div>

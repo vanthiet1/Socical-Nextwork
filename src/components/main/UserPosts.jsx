@@ -23,6 +23,7 @@ const UserPosts = () => {
             return false;
         }
     };
+
     return (
         <>
             <div className="container__user_posts">
@@ -48,28 +49,24 @@ const UserPosts = () => {
                         </div>
                         <div className="content__posts">
                             {isVideoURL(inforUser.content) ? (
-                                <video controls width="100%">
+                                <video controls width="100%" autoPlay>
                                     <source src={inforUser.content} type="video/mp4" />
                                 </video>
+                            ) : isImageOrURL(inforUser.content) ? (
+                                <img src={inforUser.content} alt="Ảnh" />
                             ) : (
-                                isImageOrURL(inforUser.content) ? (
-                                    <img src={inforUser.content} alt="Ảnh" />
-                                ) : (
-                                    <p>{inforUser.content}</p>
-                                )
+                                <p>{inforUser.content}</p>
                             )}
                         </div>
-
                         <div className="likes__comments">
-                            <span>1 Lượt thích</span>
+                            <span>{inforUser.likes} Lượt thích</span>
                             <div className="comment__share">
-                                <span>1 bình luận</span>
-                                <span>1 Chia sẻ</span>
+                                <span>{inforUser.comments} bình luận</span>
+                                <span>{inforUser.shares} Chia sẻ</span>
                             </div>
                         </div>
                         <div className="service_state">
                             <div className="state">
-
                                 <i data-visualcompletion="css-img" style={iconLike}></i>
                                 <span>Thích</span>
                             </div>

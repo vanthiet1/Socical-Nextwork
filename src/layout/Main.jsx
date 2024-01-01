@@ -1,6 +1,7 @@
 import Post from "../components/main/Post";
 import Stories from "../components/main/Stories";
 import UserPosts from "../components/main/UserPosts";
+
 const Main = () => {
     return (
         <>
