@@ -5,7 +5,7 @@
 //   filter: blur(0px); 
 //  }
 .container__sidebar__contact {
-  padding: 10px;
+  // padding: 10px;
   .content__sponsor {
     width: 100%;
     height: auto;
@@ -51,7 +51,7 @@
       .content__options {
         position: absolute;
         background-color: #232323;
-        left: -20px;
+        left: -0px;
         top: 35px;
         width: 100%;
         padding: 10px;
@@ -128,13 +128,13 @@
     }
   }
   .content__birthday__friend {
-    width: 3000%;
+    width: 550px;
     position: absolute;
     background-color: #303031;
     height: auto;
-    left: 2700%;
+    left: 500px;
     border-radius: 10px;
-    top: 100px;
+    top: -500px;
     z-index: 10;
 
     .birthday__friend {

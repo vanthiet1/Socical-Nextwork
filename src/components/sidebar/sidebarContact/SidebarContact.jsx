@@ -5,10 +5,7 @@ import { hidentPonsor, reportPonsor, inforPonsor, birthdayIcon } from "./iconSid
 import { Users } from "../../main/data/dataUser";
 import { UseBirthdayContext } from "./BirthdayContext";
 const SidebarContact = () => {
-    const { toggleInforBirthday } = UseBirthdayContext();
-    const handleDivClick = () => {
-        toggleInforBirthday();
-      };
+    const {  toggleShow} = UseBirthdayContext();
     const [showOptionSponsor, setShowOptionSponsor] = useState(false);
     const [showSponsor, setShowSponsor] = useState(true);
     
@@ -33,7 +30,10 @@ const SidebarContact = () => {
     }
     // birthday
     const userBirthday = Users[4];
-  
+    const handleBirthdayClick = () => {
+        toggleShow();
+      };
+
 
     return (
         <>
@@ -89,7 +89,7 @@ const SidebarContact = () => {
                 <div className="birthday__user">
                     <span>Sinh nhật</span>
                     {userBirthday && (
-                        <div className="birthday__today" onClick={handleDivClick}>
+                        <div className="birthday__today" onClick={handleBirthdayClick}>
                             <i data-visualcompletion="css-img" className="x1b0d499 xl1xv1r" style={birthdayIcon}></i>
                             <span>Hôm nay là sinh nhật của <b>{userBirthday.name}</b></span>
                         </div>

@@ -1,11 +1,13 @@
 @import "../../index.scss";
-
+.container{
+position: relative;
 .content__slidebar__main {
   display: flex;
   background-color: $background-color-main;
   justify-content: space-between;
   width: 100%;
   height: auto;
+
   .side__bar__list {
     width: 25%;
     height: auto;
@@ -18,6 +20,12 @@
       display: none;
     }
   }
+  .overlay-container {
+    overflow: hidden;
+    filter: blur(10px);
+  }
+
+ 
   .side__bar__contact {
     width: 23%;
     overflow-y: auto;
@@ -26,4 +34,7 @@
       display: none;
     }
   }
+
+}
+
 }
