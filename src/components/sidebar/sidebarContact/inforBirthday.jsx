@@ -1,12 +1,11 @@
+import PropTypes from 'prop-types';
 import { useState } from "react";
 import { iconClose, iconMess } from "./iconSideBarContact/icon";
 import { Users } from "../../main/data/dataUser";
 import "../../../style/components/main/sidebarContact/sidebarContact.scss";
-import PropTypes from 'prop-types';
 
 const InforBirthday = ({ onOverlayClick }) => {
   const [showInforbirthday, setShowInforBirthday] = useState(true);
-
   const close = () => {
     setShowInforBirthday(false);
     onOverlayClick();
@@ -17,7 +16,7 @@ const InforBirthday = ({ onOverlayClick }) => {
   return (
     <>
       {showInforbirthday && (
-        <div className="content__birthday__friend">
+        <div className="content__birthday__friend" >
           <div className="birthday__friend">
             <h1>Sinh nhật của bạn bè</h1>
             <div className="close" onClick={close}>

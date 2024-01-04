@@ -4,7 +4,6 @@ import DataStories from './stories/dataStories';
 import DataReels from './stories/dataReels';
 const Stories = () => {
     const [activeTab, setActiveTab] = useState('stories');
-
     const handleTabClick = (tab) => {
         setActiveTab(tab);
     }

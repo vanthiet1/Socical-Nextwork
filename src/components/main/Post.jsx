@@ -1,7 +1,15 @@
 import "../../style/components/main/mainpage/post.scss";
 import avatar from '../../public/image/avatar.png';
 import '../../style/components/main/sidebarContact/sidebarContact.scss';
+import { PostProvider } from "./postContext/postContext";
+import { useState,useContext } from "react";
 const Post = () => {
+    const [showLive,setShowLive]= useState(false);
+    const handdleShowLive =()=>{
+        setShowLive(!showLive)
+    }
+// dùng provoder 
+
     return (
         <>
             <div className="container__post">
@@ -10,7 +18,7 @@ const Post = () => {
                     <input type="text" placeholder="User ơi, bạn đang nghĩ gì thế ?" />
                 </div>
                 <div className="list__styles__post">
-                    <div className="style__post">
+                    <div className="style__post" onClick={handdleShowLive}>
                         <img height="24" width="24" alt="" src="https://static.xx.fbcdn.net/rsrc.php/v3/yF/r/v1iF2605Cb5.png?_nc_eui2=AeE5020WieuqcrCISepFKJQ53Eh3Wgl8GJPcSHdaCXwYkwKTVCbdKztMAGgqKEo8VZwERKIdMMcXny5GS93Sy7KA"></img>
                         <span>Video trực tiếp</span>
                     </div>

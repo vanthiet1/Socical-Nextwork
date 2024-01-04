@@ -37,9 +37,83 @@ const iconShare = {
     backgroundRepeat: 'no-repeat',
     display: 'inline-block',
 };
+
+const iconCommentStiker = {
+    backgroundImage: 'url(https://static.xx.fbcdn.net/rsrc.php/v3/yM/r/l0JnGrMbHxa.png?_nc_eui2=AeHHJagemr880pMPvz2uAV9fFeWL8j93Rh8V5YvyP3dGHyhB0kys27iG0xIpqYZPt0CPMiHnh8ihObY59pijkUzo)',
+    backgroundPosition: '0 -1150px',
+    backgroundSize: '26px 1552px',
+    width: '16px',
+    height: '16px',
+    backgroundRepeat: 'no-repeat',
+    display: 'inline-block',
+    backgroundColor: '#fff',
+    borderRadius: '50%'
+};
+const iconFelling = {
+    backgroundImage: 'url("https://static.xx.fbcdn.net/rsrc.php/v3/yM/r/l0JnGrMbHxa.png?_nc_eui2=AeHHJagemr880pMPvz2uAV9fFeWL8j93Rh8V5YvyP3dGHyhB0kys27iG0xIpqYZPt0CPMiHnh8ihObY59pijkUzo")',
+    backgroundPosition: '0 -1258px',
+    backgroundSize: '26px 1552px',
+    width: '16px',
+    height: '16px',
+    backgroundRepeat: 'no-repeat',
+    display: 'inline-block',
+    backgroundColor: '#fff',
+    borderRadius: '50%'
+};
+const iconCamera = {
+    backgroundImage: 'url("https://static.xx.fbcdn.net/rsrc.php/v3/yM/r/l0JnGrMbHxa.png?_nc_eui2=AeHHJagemr880pMPvz2uAV9fFeWL8j93Rh8V5YvyP3dGHyhB0kys27iG0xIpqYZPt0CPMiHnh8ihObY59pijkUzo")',
+    backgroundPosition: '0 -1186px',
+    backgroundSize: '26px 1552px',
+    width: '16px',
+    height: '16px',
+    backgroundRepeat: 'no-repeat',
+    display: 'inline-block',
+    backgroundColor: '#fff',
+    borderRadius: '50%'
+}
+const iconGifs = {
+    backgroundImage: 'url("https://static.xx.fbcdn.net/rsrc.php/v3/yM/r/l0JnGrMbHxa.png?_nc_eui2=AeHHJagemr880pMPvz2uAV9fFeWL8j93Rh8V5YvyP3dGHyhB0kys27iG0xIpqYZPt0CPMiHnh8ihObY59pijkUzo")',
+    backgroundPosition: '0 -1294px',
+    backgroundSize: '26px 1552px',
+    width: '16px',
+    height: '16px',
+    backgroundRepeat: 'no-repeat',
+    display: 'inline-block',
+    backgroundColor: '#fff',
+    borderRadius: '50%'
+};
+const iconEmoji = {
+    backgroundImage: 'url("https://static.xx.fbcdn.net/rsrc.php/v3/yM/r/l0JnGrMbHxa.png?_nc_eui2=AeHHJagemr880pMPvz2uAV9fFeWL8j93Rh8V5YvyP3dGHyhB0kys27iG0xIpqYZPt0CPMiHnh8ihObY59pijkUzo")',
+    backgroundPosition: '0 -1420px',
+    backgroundSize: '26px 1552px',
+    width: '16px',
+    height: '16px',
+    backgroundRepeat: 'no-repeat',
+    display: 'inline-block',
+    backgroundColor: '#fff',
+    borderRadius: '50%'
+}
+const iconOptions = {
+    backgroundImage: 'url("https://static.xx.fbcdn.net/rsrc.php/v3/yF/r/xh-TM_F43ew.png?_nc_eui2=AeHxZq5UB6KimQrVNrlWnsW_HV2VPM6lus8dXZU8zqW6zxnAl-OlOdFXY1aEWCq7Ny9BzOFP0KxuZ48NOCbDRwqg")',
+    backgroundPosition: '0 -490px',
+    backgroundSize: '26px 954px',
+    width: '20px',
+    height: '20px',
+    backgroundRepeat: 'no-repeat',
+    display: 'inline-block',
+ 
+}
 export {
     closePost,
     iconLike,
     iconComment,
-    iconShare
+    iconShare,
+    // comment
+    iconCommentStiker,
+    iconFelling,
+    iconCamera,
+    iconGifs,
+    iconEmoji,
+    // nav
+    iconOptions
 }

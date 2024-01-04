@@ -1,0 +1,59 @@
+.container__notification {
+  padding: 10px;
+  .options_notification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      h2 {
+        color: #fff;
+      }
+    }
+    .options {
+      i {
+        background-color: #fff;
+        border-radius: 50%;
+        cursor: pointer;
+        &:hover {
+          background-color: #a4a4a4;
+          transition: 0.2s;
+        }
+      }
+    }
+  }
+  .list__notifications {
+    padding-block: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    button {
+      border-radius: 20px;
+      padding: 10px;
+      width: max-content;
+      border: none;
+      background: transparent;
+      color: #fff;
+      cursor: pointer;
+      &:hover {
+        background-color: #444444;
+      }
+    }
+  }
+  .see__all__notification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span:nth-child(1) {
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    span:nth-child(2) {
+      color: #4287c9;
+      font-size: 1rem;
+      font-weight: 400;
+      cursor: pointer;
+    }
+  }
+}

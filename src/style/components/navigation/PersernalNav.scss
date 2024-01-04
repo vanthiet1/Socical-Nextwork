@@ -220,6 +220,17 @@
         }
       }
     }
+    .notification__nav{
+      position: absolute;
+      background-color: #242526;
+      width: 950%;
+      top: 50px;
+      left: -300px;
+      z-index: 11;
+      border-radius: 5px;
+    
+      
+    }
   }
 
   .icon__avatar {

@@ -5,7 +5,7 @@ import { hidentPonsor, reportPonsor, inforPonsor, birthdayIcon } from "./iconSid
 import { Users } from "../../main/data/dataUser";
 import { UseBirthdayContext } from "./BirthdayContext";
 const SidebarContact = () => {
-    const {  toggleShow} = UseBirthdayContext();
+    const {toggleShow} = UseBirthdayContext();
     const [showOptionSponsor, setShowOptionSponsor] = useState(false);
     const [showSponsor, setShowSponsor] = useState(true);
     
@@ -33,8 +33,6 @@ const SidebarContact = () => {
     const handleBirthdayClick = () => {
         toggleShow();
       };
-
-
     return (
         <>
             <div className="container__sidebar__contact">

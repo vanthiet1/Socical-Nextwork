@@ -3,17 +3,34 @@ import Avatar from '../../public/image/avatar.png';
 import '../../style/components/navigation/PersernalNav.scss';
 // menu
 import Menu from './MenuNav/Menu';
+import NotificationNav from './NotificationNav/notificationNav';
 const PersernalNav = () => {
+    const menuRef = useRef();
+    const notificationRef = useRef();
     const [showMenu, setShowMenu] = useState(false);
-    const iconRef = useRef();
+    const [showNotification, setShowNotification] = useState(false);
+
     const handleShowMenu = () => {
         setShowMenu(!showMenu);
     }
-    const handleClickOutside = (event) => {
-        if (iconRef.current && !iconRef.current.contains(event.target)) {
-            setShowMenu(false)
-        }
+    const handleShowNotification = () => {
+        setShowNotification(!showNotification);
     }
+
+    const handleClickOutside = (event) => {
+        if (
+            menuRef.current && !menuRef.current.contains(event.target) &&
+            notificationRef.current && !notificationRef.current.contains(event.target)
+        ) {
+            setShowMenu(false);
+            setShowNotification(false);
+        } else if (menuRef.current && !menuRef.current.contains(event.target)) {
+            setShowMenu(false);
+        } else if (notificationRef.current && !notificationRef.current.contains(event.target)) {
+            setShowNotification(false);
+        }
+    };
+
     useEffect(() => {
         window.addEventListener('click', handleClickOutside);
         return () => {
@@ -23,7 +40,7 @@ const PersernalNav = () => {
     return (
         <>
             <div className="content__personal">
-                <div className="page__icon" ref={iconRef} onClick={handleShowMenu}>
+                <div className="page__icon" ref={menuRef} onClick={handleShowMenu}>
                     <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" ><path d="M12 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm8 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm8 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-8a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm8 16a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm8 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 17a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"></path></svg>
                     <div className="hover__page__home">
                         <span>Menu</span>
@@ -38,11 +55,16 @@ const PersernalNav = () => {
                         <span>Messenger</span>
                     </div>
                 </div>
-                <div className="page__icon">
+                <div className="page__icon" onClick={handleShowNotification} ref={notificationRef}>
                     <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M3 9.5a9 9 0 1 1 18 0v2.927c0 1.69.475 3.345 1.37 4.778a1.5 1.5 0 0 1-1.272 2.295h-4.625a4.5 4.5 0 0 1-8.946 0H2.902a1.5 1.5 0 0 1-1.272-2.295A9.01 9.01 0 0 0 3 12.43V9.5zm6.55 10a2.5 2.5 0 0 0 4.9 0h-4.9z"></path></svg>
                     <div className="hover__page__home">
                         <span>Thông báo</span>
                     </div>
+                    {showNotification && (
+                        <div className="notification__nav" >
+                            <NotificationNav></NotificationNav>
+                        </div>
+                    )}
                 </div>
                 <div className="icon__avatar">
                     <img src={Avatar} alt="" />
