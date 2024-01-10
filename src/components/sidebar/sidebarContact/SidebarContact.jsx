@@ -5,7 +5,6 @@ import { hidentPonsor, reportPonsor, inforPonsor, birthdayIcon } from "./iconSid
 import { Users } from "../../../data/dataUser";
 import { UseBirthdayContext } from "./BirthdayContext";
 import { Link } from "react-router-dom";
-// import paths from "../../../config/path";
 const SidebarContact = () => {
     const { toggleShow } = UseBirthdayContext();
     const [showOptionSponsor, setShowOptionSponsor] = useState(false);
