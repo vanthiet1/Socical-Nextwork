@@ -3,7 +3,7 @@ import Avatar from '../../public/image/avatar.png';
 import '../../style/components/navigation/PersernalNav.scss';
 // menu
 import Menu from './MenuNav/Menu';
-import NotificationNav from './NotificationNav/notificationNav';
+import NotificationNav from './NotificationNav/NotificationNav';
 import { Users } from '../../data/dataUser';
 import { iconSetingUser } from './dataIcon/iconSetting';
 import { Link } from 'react-router-dom';

@@ -2,7 +2,6 @@
 import '../../../style/components/navigation/Notification.scss';
 import { iconOptions } from '../../main/dataIcon/icon';
 const NotificationNav = () => {
-
     return (
         <>
             <div className="container__notification">
