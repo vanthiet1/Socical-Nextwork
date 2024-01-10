@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "../../../style/components/main/sidebarContact/SidebarContact.scss";
+import "../../../style/components/main/sidebarContact/sidebarContact.scss";
 import { hidentPonsor, reportPonsor, inforPonsor, birthdayIcon } from "./iconSideBarContact/icon";
 // import { sponsor } from "./iconSideBarContact/Sponser/Sponser";
 import { Users } from "../../../data/dataUser";
