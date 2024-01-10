@@ -11,6 +11,7 @@ const ProfileUser = () => {
                            <button>
                            <i data-visualcompletion="css-img" style={camera}></i>
                              <span>Thêm ảnh bìa</span>
+                             <span>new infomartion</span>
                            </button>
                         </div>
                      </div>
