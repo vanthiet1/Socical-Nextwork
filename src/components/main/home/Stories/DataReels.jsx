@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { Users } from '../../../data/dataUser';
-import '../../../style/components/main/mainpage/stories.scss';
-import '../../../style/components/main/mainpage/reels.scss'
+import { Users } from '../../../../data/dataUser';
+import '../../../../style/components/main/mainpage/stories.scss';
+import '../../../../style/components/main/mainpage/reels.scss'
 const DataReels = () => {
     const [slider, setSlider] = useState(0);
     const [showArowLeft, setShowArrowLeft] = useState(false);

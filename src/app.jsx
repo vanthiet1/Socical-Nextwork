@@ -11,9 +11,7 @@ const App = () => {
                             <Route
                                 key={index}
                                 path={route.path}
-                                element={
-                                <route.component />
-                                }
+                                element={<route.component />}
                             >
                             </Route>
                         )

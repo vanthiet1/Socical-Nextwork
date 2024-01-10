@@ -1,6 +1,6 @@
-import Post from "../components/main/Post";
-import Stories from "../components/main/Stories";
-import UserPosts from "../components/main/UserPosts";
+import Post from "../components/main/home/Post";
+import Stories from "../components/main/home/Stories";
+import UserPosts from "../components/main/home/UserPosts";
 
 const Main = () => {
     return (

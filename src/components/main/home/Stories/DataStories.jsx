@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { Users } from '../../../data/dataUser';
-import avatarProfile from '../../../public/image/imgProfile.png';
-import '../../../style/components/main/mainpage/stories.scss';
+import { Users } from '../../../../data/dataUser';
+import avatarProfile from '../../../../public/image/imgProfile.png';
+import '../../../../style/components/main/mainpage/stories.scss';
 const DataStories = () => {
     const [slider, setSlider] = useState(0);
     const [showArowLeft, setShowArrowLeft] = useState(false);

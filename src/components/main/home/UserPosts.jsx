@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "../../style/components/main/mainpage/userPosts.scss";
-import { iconLike, closePost, iconComment, iconShare, iconCommentStiker, iconFelling, iconCamera, iconGifs, iconEmoji } from './dataIcon/icon';
-import allUserPost from './dataUserPost/DataUserPost';
+import "../../../style/components/main/mainpage/userPosts.scss";
+import { iconLike, closePost, iconComment, iconShare, iconCommentStiker, iconFelling, iconCamera, iconGifs, iconEmoji } from './DataIcon/Icon';
+import allUserPost from './DataUserPost/DataUserPost';
 // import ReactPlayer from 'react-player';
 
 const UserPosts = () => {
@@ -44,8 +44,8 @@ const UserPosts = () => {
         newActiveLikes[index] = !newActiveLikes[index];
         setActiveLikes(newActiveLikes);
     }
-     const  [count,setCount] = useState(0);
-    const handleSetcount = ()=>{
+    const [count, setCount] = useState(0);
+    const handleSetcount = () => {
         setCount(
             count + 1
         )
@@ -95,7 +95,7 @@ const UserPosts = () => {
                         <div className="service_state">
                             <div className="state" onClick={() => handleActiveLike(index)}>
                                 <i data-visualcompletion="css-img" style={iconLike}></i>
-                                <span onClick={handleSetcount}  className={activeLikes[index] ? 'active__like' : ''}>
+                                <span onClick={handleSetcount} className={activeLikes[index] ? 'active__like' : ''}>
                                     Thích
                                 </span>
                             </div>

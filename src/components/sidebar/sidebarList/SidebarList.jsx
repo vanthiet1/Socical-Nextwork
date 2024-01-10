@@ -1,8 +1,8 @@
 // import { Link } from 'react-router-dom';
 import { useState } from "react";
 import '../../../style/components/main/sidebarList/sidebarList.scss';
-import { listSidebar, imglistSidebar } from "./data/dataList";
-import { listGroups, imgListGroups } from "./data/dataListGroups";
+import { listSidebar, imglistSidebar } from "./data/DataList";
+import { listGroups, imgListGroups } from "./data/DataListGroups";
 import { Users } from "../../../data/dataUser";
 import { Link } from "react-router-dom";
 

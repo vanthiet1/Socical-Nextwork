@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import '../../style/components/main/mainpage/stories.scss';
-import DataStories from './stories/dataStories';
-import DataReels from './stories/dataReels';
+import DataStories from './Stories/DataStories';
+import DataReels from './Stories/DataReels';
+import '../../../style/components/main/mainpage/stories.scss';
 const Stories = () => {
     const [activeTab, setActiveTab] = useState('stories');
     const handleTabClick = (tab) => {

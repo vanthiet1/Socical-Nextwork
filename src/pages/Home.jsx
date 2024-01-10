@@ -5,7 +5,7 @@ import SidebarContact from '../layout/SidebarContact';
 import Main from '../layout/Main';
 import '../style/layouts/Main.scss';
 import { UseBirthdayContext } from '../components/sidebar/sidebarContact/BirthdayContext';
-import InforBirthday from '../components/sidebar/sidebarContact/inforBirthday';
+import InforBirthday from '../components/sidebar/sidebarContact/InforBirthday';
 
 const Home = () => {
   const { show, toggleShow } = UseBirthdayContext();
