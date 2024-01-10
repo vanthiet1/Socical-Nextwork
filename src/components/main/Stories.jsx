@@ -25,6 +25,7 @@ const Stories = () => {
                 <div className="stories__and__reels">
                     {activeTab === 'stories' && <DataStories />}
                     {activeTab === 'reels' && <DataReels />}
+                    
                 </div>
             </div>
         </>

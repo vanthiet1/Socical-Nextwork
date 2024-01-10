@@ -5,6 +5,7 @@ import Watch from "../pages/watch/Watch";
 import Marketplace from "../pages/marketplace/Marketplace";
 import Groups from "../pages/groups/Groups";
 import Gaming from "../pages/gaming/Gaming";
+import ProfileUser from "../pages/profile/ProfileUser";
 const publicRoutes = [
     {
         path:paths.Home,
@@ -30,6 +31,11 @@ const publicRoutes = [
         path:paths.Gaming,
         component:Gaming,
         title:'Gaming',
+    },
+    {
+        path:paths.ProfileUser,
+        component:ProfileUser,
+        title:'ProfileUser',
     },
    
 ]

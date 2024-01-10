@@ -9,9 +9,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <BirthdayProvider>
     <React.StrictMode>
       <Router>
-        <App />
+        <App/>
       </Router>
     </React.StrictMode>
-  </BirthdayProvider>
+    </BirthdayProvider>
+
 
 )

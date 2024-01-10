@@ -26,7 +26,7 @@ const Home = () => {
     return () => {
       window.removeEventListener('click', handleWindowClick);
     };
-  }, [show, toggleShow]);
+  }, []);
 
   return (
     <>

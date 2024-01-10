@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Users } from '../data/dataUser';
+import { Users } from '../../../data/dataUser';
 import '../../../style/components/main/mainpage/stories.scss';
 import '../../../style/components/main/mainpage/reels.scss'
 const DataReels = () => {

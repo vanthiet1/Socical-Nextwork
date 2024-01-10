@@ -1,12 +1,16 @@
 import PropTypes from 'prop-types';
 import { useState } from "react";
 import { iconClose, iconMess } from "./iconSideBarContact/icon";
-import { Users } from "../../main/data/dataUser";
+import { Users } from "../../../data/dataUser";
 import "../../../style/components/main/sidebarContact/sidebarContact.scss";
 
 const InforBirthday = ({ onOverlayClick }) => {
   const [showInforbirthday, setShowInforBirthday] = useState(true);
   const close = () => {
+    const overlayElement = document.querySelector('.overlay-container');
+    if (overlayElement) {
+      overlayElement.classList.remove('overlay-container');
+    }
     setShowInforBirthday(false);
     onOverlayClick();
   };

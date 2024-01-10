@@ -4,11 +4,17 @@ import '../../style/components/navigation/PersernalNav.scss';
 // menu
 import Menu from './MenuNav/Menu';
 import NotificationNav from './NotificationNav/notificationNav';
+import { Users } from '../../data/dataUser';
+import { iconSetingUser } from './dataIcon/iconSetting';
+import { Link } from 'react-router-dom';
 const PersernalNav = () => {
     const menuRef = useRef();
     const notificationRef = useRef();
+    const setingUser = useRef();
     const [showMenu, setShowMenu] = useState(false);
     const [showNotification, setShowNotification] = useState(false);
+    const [showSetingUser, setShowSetingUser] = useState(false);
+
 
     const handleShowMenu = () => {
         setShowMenu(!showMenu);
@@ -16,18 +22,26 @@ const PersernalNav = () => {
     const handleShowNotification = () => {
         setShowNotification(!showNotification);
     }
+    const handleShowSetingUser = () => {
+        setShowSetingUser(!showSetingUser);
+    }
 
     const handleClickOutside = (event) => {
         if (
             menuRef.current && !menuRef.current.contains(event.target) &&
-            notificationRef.current && !notificationRef.current.contains(event.target)
+            notificationRef.current && !notificationRef.current.contains(event.target) &&
+            setingUser.current && !setingUser.current.contains(event.target)
         ) {
             setShowMenu(false);
             setShowNotification(false);
+            setShowSetingUser(false);
+
         } else if (menuRef.current && !menuRef.current.contains(event.target)) {
             setShowMenu(false);
         } else if (notificationRef.current && !notificationRef.current.contains(event.target)) {
             setShowNotification(false);
+        } else if (setingUser.current && !setingUser.current.contains(event.target)) {
+            setShowSetingUser(false);
         }
     };
 
@@ -67,10 +81,35 @@ const PersernalNav = () => {
                     )}
                 </div>
                 <div className="icon__avatar">
-                    <img src={Avatar} alt="" />
+                    <img ref={setingUser} onClick={handleShowSetingUser} src={Avatar} alt="" />
                     <div className="hover__page__home">
                         <span>Tài khoản</span>
                     </div>
+                    {showSetingUser && (
+                        <div className="list__setting_users">
+                            {Users && (
+                                <Link to={`/ProfileUser/${Users[0].id}`}>
+                                    <div className="users_infomation">
+                                        <img src={Users[0].avatarUser} alt="" />
+                                        <span>{Users[0].name}</span>
+                                    </div>
+                                </Link>
+                            )}
+                            <div className="list__setings">
+                                {iconSetingUser.map((iconSetting, index) => (
+                                    <div className="option__setings" key={index}>
+                                        <i data-visualcompletion="css-img" style={iconSetting}></i>
+                                        <span style={{
+                                            color: '#fff'
+                                        }}>{iconSetting.name}</span>
+                                    </div>
+                                ))}
+                            </div>
+                            <div className="copyright">
+                                <p><a href="">Quyền riêng tư </a> · <a href="">Điều khoản</a>·<a href="">Quảng cáo </a>·<a href=""> Lựa chọn quảng cáo </a>·<a href="">Cookie</a>·<a href="">Meta © 2024</a></p>
+                            </div>
+                        </div>
+                    )}
                 </div>
             </div>
         </>

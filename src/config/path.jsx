@@ -3,6 +3,8 @@ const paths = {
     Watch:'/Watch',
     Marketplace:'/Marketplace',
     Groups:'/Groups',
-    Gaming:'/Gaming'
+    Gaming:'/Gaming',
+    // 
+    ProfileUser:'/ProfileUser/:id',
 }
 export default paths;

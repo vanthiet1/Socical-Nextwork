@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Users } from '../data/dataUser';
+import { Users } from '../../../data/dataUser';
 import avatarProfile from '../../../public/image/imgProfile.png';
 import '../../../style/components/main/mainpage/stories.scss';
 const DataStories = () => {

@@ -12,6 +12,7 @@
     border-radius: 50%;
     text-align: center;
     position: relative;
+    cursor: pointer;
     svg {
       color: $color-pesernal-icon;
     }
@@ -43,7 +44,7 @@
       width: 650px;
       left: -460px;
       height: auto;
-      z-index: 10;
+      z-index: 11;
       bottom: -640px;
       padding: 5px 15px 5px 15px;
       border-radius: 8px;
@@ -161,6 +162,7 @@
           }
         }
         .service__menu__right {
+          
           width: 40%;
           height: max-content ;
           background-color: #242526;
@@ -228,22 +230,24 @@
       left: -300px;
       z-index: 11;
       border-radius: 5px;
-    
       
     }
   }
 
   .icon__avatar {
     position: relative;
+    cursor: pointer;
+
     img {
       border-radius: 50%;
       width: 70%;
+      &:hover .hover__page__home {
+        opacity: 0.9;
+        transition: ease-out 0.5s;
+        color: black;
+      }
     }
-    &:hover .hover__page__home {
-      opacity: 0.9;
-      transition: ease-out 0.5s;
-      color: black;
-    }
+   
     .hover__page__home {
       position: absolute;
       bottom: -45px;
@@ -257,6 +261,55 @@
       opacity: 0;
       width: 100px;
       text-align: center;
+      
+    }
+    .list__setting_users{
+      position: absolute;
+      background-color: #242526;
+      border-radius: 10px;
+      width:350px;
+      z-index: 10;
+      left: -300px;
+      padding: 10px;
+      .users_infomation{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 5px 0px 5px 5px;
+        border-radius: 10px;
+        &:hover{
+        background-color: rgb(67, 67, 67);
+
+        }
+        img{
+          width: 50px;
+        }
+        span{
+           color: #fff;
+           font-weight: 600;
+        }
+      }
+      .list__setings{
+        .option__setings{
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        margin-block: 5px;
+        padding: 12px 0px 12px 5px;
+        border-radius: 8px;
+      &:hover{
+        background-color: rgb(67, 67, 67);
+      }
+        }
+      }
+      .copyright{
+         p{
+           a{
+            font-size: 0.8rem;
+color: #b3b3b3;
+           }
+         }
+      }
     }
   }
 }

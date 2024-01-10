@@ -11,6 +11,7 @@
         justify-content: space-between;
         border-bottom:0.5px solid rgb(66, 66, 66);
         padding-bottom: 15px;
+       
         img{
             border-radius: 50%;
             width:40px;
@@ -22,9 +23,15 @@
              background-color: #3c3c3c;
              border: none;
              outline: none;
+             cursor: pointer;
+             &:hover{
+             background-color: #575757;
+
+             }
              &::placeholder{
                 color: rgb(160, 160, 160);
                 font-size: 1rem;
+              
              }
         }
     }
@@ -36,10 +43,11 @@
         .style__post{
             display: flex;
             align-items: center;
-            padding:5px 5px 5px 5px;
+            padding:0px 5px 0px 10px;
+            border-radius: 10px;
+
             &:hover{
                 background-color:#383838 ;
-                border-radius: 10px;
                 cursor: pointer;
                 transition: ease .2s;
             }
