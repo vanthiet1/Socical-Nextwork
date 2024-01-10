@@ -5,7 +5,7 @@ import '../../style/components/navigation/PersernalNav.scss';
 import Menu from './MenuNav/Menu';
 import NotificationNav from './NotificationNav/Notification';
 import { Users } from '../../data/dataUser';
-import { iconSetingUser } from './DataIcon/iconSetting';
+import { iconSetingUser } from './dataIcon/iconSetting';
 import { Link } from 'react-router-dom';
 const PersernalNav = () => {
     const menuRef = useRef();
