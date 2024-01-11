@@ -2,7 +2,7 @@
 import { useState } from "react";
 import '../../../style/components/main/sidebarList/sidebarList.scss';
 import { listSidebar, imglistSidebar } from "./data/DataList";
-import { listGroups, imgListGroups } from "./data/DataListGroups";
+import { listGroups} from "./data/DataListGroups";
 import { Users } from "../../../data/dataUser";
 import { Link } from "react-router-dom";
 
@@ -30,10 +30,7 @@ const SidebarList = () => {
     };
 
 
-    const allListGroups = listGroups.map((item, index) => ({
-        text: item,
-        image: imgListGroups[index]
-    }));
+
     return (
         <>
             <div className="container__sidebarList">
@@ -64,16 +61,16 @@ const SidebarList = () => {
                         <span>Lối tắt của bạn</span>
                         <span>Chỉnh sửa</span>
                     </div>
-                    {allListGroups.map((item, index) => (
-                        <div key={index}>
+                    {listGroups && (
+                        <div>
                             <div className="item__categories">
-                                <img src={item.image} alt="" style={{
+                                <img src={listGroups[0].img} alt="" style={{
                                     borderRadius: '10px'
                                 }} />
-                                <span>{item.text}</span>
+                                <span>{listGroups[0].name}</span>
                             </div>
                         </div>
-                    ))}
+                    )}
                     <div className="copyright">
                         <span>
                             Quyền riêng tư - Điều khoản - lựa chọn quảng cáo - Cookie - Xem thêm - Văn Thiết Frontend Dev

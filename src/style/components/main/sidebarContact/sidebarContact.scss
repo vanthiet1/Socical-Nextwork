@@ -81,7 +81,10 @@
       &:hover .icon__options {
         visibility: visible;
       }
-
+    .sponsor__container{
+      display: flex;
+      align-items: center;
+      gap: 10px;
       .img__content {
         img {
           width: 130px;
@@ -98,6 +101,8 @@
           font-size: 0.7rem;
         }
       }
+    }
+   
     }
   }
   .birthday__user {

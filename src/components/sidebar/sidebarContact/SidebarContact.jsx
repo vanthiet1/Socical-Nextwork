@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "../../../style/components/main/sidebarContact/sidebarContact.scss";
 import { hidentPonsor, reportPonsor, inforPonsor, birthdayIcon } from "./iconSideBarContact/icon";
-// import { sponsor } from "./iconSideBarContact/Sponser/Sponser";
+import { sponsor } from "./iconSideBarContact/Sponser/Sponser";
 import { Users } from "../../../data/dataUser";
 import { UseBirthdayContext } from "./BirthdayContext";
 import { Link } from "react-router-dom";
@@ -73,13 +73,20 @@ const SidebarContact = () => {
 
                                 </div>
                             )}
-                            <div className="img__content">
-                                <img src="https://scontent-hkg1-1.xx.fbcdn.net/v/t45.1600-4/406758427_120203597309650470_3303699855645786187_n.png?stp=cp0_dst-jpg_p296x100_q90_spS444&_nc_cat=1&ccb=1-7&_nc_sid=528f85&_nc_eui2=AeHsgqPSCZ-5puAlUFztQiNuR1HK5ql1kA5HUcrmqXWQDqsEEzzzNvT4x7v8ImXVrKsGVjx0ClapPaKlheQ4gmmE&_nc_ohc=kgghfrhHpb4AX-TV4bA&_nc_ht=scontent-hkg1-1.xx&oh=00_AfAtd0pTMGEnNi3I02DkBF-Eslu1B6f8HfpNVCIfuncHxA&oe=65931ED6" alt="Shopee" />
-                            </div>
-                            <div className="title__content">
-                                <span>THAM GIA SHOPEE VIDEO NGAY</span>
-                                <span>shopee.vn</span>
-                            </div>
+
+                            {sponsor && (
+                                <div className="sponsor__container">
+                                    <div className="img__content">
+                                        <img src={sponsor[0].img} alt="Shopee" />
+                                    </div>
+                                    <div className="title__content">
+                                        <span>{sponsor[0].title}</span>
+                                        <span>{sponsor[0].domain}</span>
+                                    </div>
+                                </div>
+                            )}
+
+
                         </div>
                     )}
                 </div>
