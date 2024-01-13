@@ -1,6 +1,6 @@
 
 import '../../../style/components/navigation/Notification.scss';
-import { iconOptions } from '../../main/home/DataIcon/Icon';
+import { iconOptions } from '../../main/home/Data/DataIcon/Icon';
 const NotificationNav = () => {
     return (
         <>

@@ -1,0 +1,33 @@
+.cover__photo__image {
+    width: 70%;
+    margin: auto;
+    background-color: #18191a;
+    height: 405px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    .add__cover__image {
+      position: absolute;
+      bottom: 20px;
+      right: 50px;
+
+      button {
+        background: transparent;
+        border: none;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding: 12px;
+        background-color: #fff;
+        border-radius: 8px;
+        cursor: pointer;
+        &:hover{
+          background-color: #cbcbcb;
+           }
+        span {
+          color: #333;
+          font-weight: 600;
+        }
+      }
+    }
+  }

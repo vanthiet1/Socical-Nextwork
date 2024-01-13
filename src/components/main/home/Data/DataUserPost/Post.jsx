@@ -1,6 +1,6 @@
-import avatars from '../../../../public/image/avatar.png';
-import video from '../../../../public/video/4166969340659133351 - Trim.mp4';
-import video2 from '../../../../public/video/json-server.mp4';
+import avatars from '../../../../../public/image/avatar.png';
+import video from '../../../../../public/video/4166969340659133351 - Trim.mp4';
+import video2 from '../../../../../public/video/json-server.mp4';
 const allUserPost = [
 {
     id:1,

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../../../style/components/main/mainpage/userPosts.scss";
-import { iconLike, closePost, iconComment, iconShare, iconCommentStiker, iconFelling, iconCamera, iconGifs, iconEmoji } from './DataIcon/Icon';
-import allUserPost from './DataUserPost/DataUserPost';
+import { iconLike, closePost, iconComment, iconShare, iconCommentStiker, iconFelling, iconCamera, iconGifs, iconEmoji } from './Data/DataIcon/Icon';
+import allUserPost from './Data/DataUserPost/Post';
 // import ReactPlayer from 'react-player';
 
 const UserPosts = () => {
@@ -67,7 +67,9 @@ const UserPosts = () => {
                             </div>
                             <div className="options__user">
                                 <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor" ><g transform="translate(-446 -350)"><path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path></g></svg>
-                                <i className="close__post" style={closePost} onClick={() => togglePostVisibility(index)} />
+                                <i className="close__post" style={closePost} onClick={
+                                    () => togglePostVisibility(index)}
+                                />
 
                             </div>
                         </div>
@@ -93,9 +95,14 @@ const UserPosts = () => {
                             </div>
                         </div>
                         <div className="service_state">
-                            <div className="state" onClick={() => handleActiveLike(index)}>
+                            <div className="state" onClick={() => {
+                                handleActiveLike(index)
+                                handleSetcount()
+                            }
+                            }
+                            >
                                 <i data-visualcompletion="css-img" style={iconLike}></i>
-                                <span onClick={handleSetcount} className={activeLikes[index] ? 'active__like' : ''}>
+                                <span className={activeLikes[index] ? 'active__like' : ''}>
                                     Thích
                                 </span>
                             </div>

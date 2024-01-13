@@ -1,0 +1,65 @@
+.container__option__service{
+   display: flex;
+   justify-content: space-between;
+   width: 65%;
+   margin: auto;
+   padding-block: 10px;
+   .option__services{
+    display: flex;
+    align-items: center;
+       button{
+         padding: 15px 10px 15px 10px;
+         border: none;
+         border-radius: 7px;
+         background: transparent;
+         color: #a5a5a5;
+         font-weight: 600;
+         cursor: pointer;
+         &:hover{
+        background-color: #3a3b3c;
+         }
+      
+        
+       }
+       button:nth-child(7){
+       display: flex;
+       align-items: center;
+       gap: 5px;
+       position: relative;
+       .list__hobies{
+         position: absolute;
+         background-color: #242526;
+         border-radius: 8px;
+         width: 400px;
+         text-align: left;
+          padding:0px 10px 0px 10px;
+          z-index: 10;
+          bottom: -230px;
+         span{
+          padding: 10px 5px 10px 5px;
+          font-size: 0.9rem;
+          display: inline-block;
+          color: #fff;
+          width: 100%;
+          border-radius: 5px;
+          &:hover{
+            background-color: #333;
+            transition: ease 0.5s;
+          }
+         }
+       }
+     }
+   }
+   .more__settings__item{
+    background-color: #3a3b3c;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 0px 10px 0px 10px;
+     border-radius: 7px;
+     cursor: pointer;
+     svg{
+        color: #fff;
+     }
+   }
+}

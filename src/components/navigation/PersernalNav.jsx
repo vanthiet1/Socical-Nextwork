@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+  import { useEffect, useRef, useState } from 'react';
 import Avatar from '../../public/image/avatar.png';
 import '../../style/components/navigation/PersernalNav.scss';
 // menu

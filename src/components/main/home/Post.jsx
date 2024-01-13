@@ -3,7 +3,7 @@ import "../../../style/components/main/mainpage/post.scss";
 import avatar from '../../../public/image/avatar.png';
 import '../../../style/components/main/sidebarContact/sidebarContact.scss';
 // import { PostProvider } from "./postContext/postContext";
-import { listOptionPost } from "./DataListOptionPost/DataList";
+import { listOptionPost } from "./Data/DataListOptionPost/DataList";
 const Post = () => {
     const [showLive, setShowLive] = useState(false);
     const handdleShowLive = () => {

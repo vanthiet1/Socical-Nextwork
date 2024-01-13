@@ -36,6 +36,7 @@
       font-family: $font-menu-nav;
       opacity: 0;
       width: 100px;
+      z-index: 11;
     }
     .all__list_menus {
       font-family: $font-list-menu;
@@ -48,7 +49,7 @@
       bottom: -640px;
       padding: 5px 15px 5px 15px;
       border-radius: 8px;
-
+ 
       .title__menu {
         text-align: left;
         padding-bottom: 10px;

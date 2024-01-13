@@ -1,0 +1,100 @@
+.user__posts__infor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+  margin: auto;
+  height: auto;
+  border-bottom: 1px solid #646464;
+  .name {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .image__user {
+      img {
+        border-radius: 50%;
+        width: 190px;
+        border: 5px solid #363636;
+      }
+      position: relative;
+      transform: translateY(-50px);
+      .camera_posts {
+        position: absolute;
+        bottom: 30px;
+        right: 3px;
+        background-color: #ababab;
+        padding: 7px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &:hover {
+          background-color: #707070;
+        }
+      }
+    }
+    .name__and__friends {
+      span:nth-child(1) {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+      }
+      span:nth-child(2) {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #b4b4b4;
+      }
+      span {
+        display: block;
+      }
+    }
+  }
+  .settings__post {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    .add__stories {
+      background-color: #0866ff;
+      border-radius: 6px;
+      padding: 6px 8px 6px 6px;
+      &:hover {
+        background-color: #186ef9;
+      }
+      span {
+        color: #fff;
+        font-weight: 600;
+      }
+    }
+    .edit__profile {
+      background-color: #3a3b3c;
+      border-radius: 6px;
+      padding: 6px;
+      transition: ease 0.1s;
+      &:hover {
+        background-color: #555555;
+      }
+      span {
+        color: #fff;
+        font-weight: 600;
+      }
+    }
+    .option__friends {
+      border: none;
+      padding: 8px 15px 8px 15px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      background-color: #3a3b3c;
+      color: #fff;
+      cursor: pointer;
+    }
+    .add__stories,
+    .edit__profile {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      cursor: pointer;
+    }
+  }
+}
